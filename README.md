@@ -12,4 +12,4 @@ Toto repository obsahuje mé řešení algoritmických úloh z [LeetCode](https:
 └── README.md    # Tento soubor
 ```
 
-Každý soubor je pojmenován podle ID a názvu úlohy na LeetCode, např. `1-two-sum.py`.# CS-Projects
+Každý soubor je pojmenován podle ID a názvu úlohy na LeetCode, např. `1-two-sum.py`.
