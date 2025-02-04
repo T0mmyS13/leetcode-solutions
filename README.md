@@ -5,11 +5,10 @@ Toto repository obsahuje mé řešení algoritmických úloh z [LeetCode](https:
 ## Struktura repository
 
 ```
-.
+master
 ├── easy/        # Snadné úlohy
 ├── medium/      # Středně obtížné úlohy
 ├── hard/        # Náročné úlohy
-└── README.md    # Tento soubor
 ```
 
 Každý soubor je pojmenován podle ID a názvu úlohy na LeetCode, např. `1-two-sum.py`.
