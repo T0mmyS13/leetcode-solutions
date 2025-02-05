@@ -1,0 +1,45 @@
+class Solution(object):
+    def spiralOrder(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: List[int]
+        """
+        
+        output = []
+        i = 0
+        while matrix != []:
+            output.extend(matrix[i])
+            matrix.remove(matrix[i])
+            if matrix == []:
+                break
+            for j in range(len(matrix)):
+                output.append(matrix[j][-1])
+                matrix[j].remove(matrix[j][-1])
+                if matrix == []:
+                    break
+            for j in range(len(matrix[-1])-1,-1,-1):
+                output.append(matrix[-1][j])
+                matrix[-1].remove(matrix[-1][j])
+                if matrix == []:
+                    break
+            matrix.remove(matrix[-1])
+            if matrix == []:
+                break   
+            for j in range(len(matrix)-1,-1,-1):
+                output.append(matrix[j][0])
+                matrix[j].remove(matrix[j][0])
+                if matrix == []:
+                    break
+        return output
+        
+
+
+
+    
+    
+            
+            
+        
+matrix = [[7],[9],[6]]
+print(Solution().spiralOrder(matrix))
+        
