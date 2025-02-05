@@ -1,14 +1,13 @@
 # LeetCode Solutions Repository
 
-Toto repository obsahuje mé řešení algoritmických úloh z [LeetCode](https://leetcode.com/). Každý soubor odpovídá jedné úloze a obsahuje můj kód a případně i poznámky k řešení.
+This repository contains my solutions to algorithmic problems from [LeetCode](https://leetcode.com/). Each file corresponds to a specific problem and includes my code, along with any notes on the solution if applicable.
 
-## Struktura repository
-
+## Repository Structure
 ```
 master
-├── easy/        # Snadné úlohy
-├── medium/      # Středně obtížné úlohy
-├── hard/        # Náročné úlohy
+├── easy/        # Easy problems
+├── medium/      # Medium difficulty problems
+├── hard/        # Hard problems
+├── daily/       # Daily challenge problems
 ```
-
-Každý soubor je pojmenován podle ID a názvu úlohy na LeetCode, např. `1-two-sum.py`.
+Each file is named according to the problem ID and title on LeetCode, e.g., `1-two-sum.py`.
