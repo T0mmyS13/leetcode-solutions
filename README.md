@@ -22,7 +22,7 @@ leetcode-solutions/
 
 ## 🔧 Technologies Used
 
-- **Language**: Python 3
+- **Language**: Python, C#
 - **Focus**: Clean, readable code with optimal time/space complexity
 - **Documentation**: Each solution includes problem analysis and approach explanation
 
