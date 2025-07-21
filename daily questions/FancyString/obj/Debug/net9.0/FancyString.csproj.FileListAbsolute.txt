@@ -1,0 +1,15 @@
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\bin\Debug\net9.0\FancyString.exe
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\bin\Debug\net9.0\FancyString.deps.json
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\bin\Debug\net9.0\FancyString.runtimeconfig.json
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\bin\Debug\net9.0\FancyString.dll
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\bin\Debug\net9.0\FancyString.pdb
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\FancyString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\FancyString.AssemblyInfoInputs.cache
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\FancyString.AssemblyInfo.cs
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\FancyString.csproj.CoreCompileInputs.cache
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\FancyString.sourcelink.json
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\FancyString.dll
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\refint\FancyString.dll
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\FancyString.pdb
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\FancyString.genruntimeconfig.cache
+C:\Users\Uzivatel\OneDrive\Dokumenty\Projekty\leetcode-solutions\daily questions\FancyString\obj\Debug\net9.0\ref\FancyString.dll
