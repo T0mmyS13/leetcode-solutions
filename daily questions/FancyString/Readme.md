@@ -48,28 +48,115 @@ The solution uses a **greedy approach**:
 3. If we encounter the same character for the third consecutive time, skip it
 4. Otherwise, add the character to the result
 
-## Algorithm
+## My C# Solution
 
-```python
-def makeFancyString(s: str) -> str:
-    result = []
-    
-    for char in s:
-        # If we have less than 2 characters or the current character
-        # is different from the last two, we can safely add it
-        if len(result) < 2 or not (result[-1] == result[-2] == char):
-            result.append(char)
-    
-    return ''.join(result)
+```csharp
+public class Solution 
+{
+    public string MakeFancyString(string s) 
+    {
+        if (s.Length <= 2) return s;
+        
+        StringBuilder result = new StringBuilder();
+        result.Append(s[0]);
+        result.Append(s[1]);
+        
+        for (int i = 2; i < s.Length; i++)
+        {
+            // Only add current character if it doesn't create three consecutive same characters
+            if (!(s[i] == result[result.Length - 1] && s[i] == result[result.Length - 2]))
+            {
+                result.Append(s[i]);
+            }
+        }
+        
+        return result.ToString();
+    }
+}
 ```
+
+### Alternative Approach (More Readable)
+
+```csharp
+public class Solution 
+{
+    public string MakeFancyString(string s) 
+    {
+        List<char> result = new List<char>();
+        
+        foreach (char c in s)
+        {
+            // If we have less than 2 characters or the current character
+            // is different from the last two, we can safely add it
+            if (result.Count < 2 || 
+                !(result[result.Count - 1] == c && result[result.Count - 2] == c))
+            {
+                result.Add(c);
+            }
+        }
+        
+        return new string(result.ToArray());
+    }
+}
+```
+
+## Test Cases
+
+```csharp
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Solution solution = new Solution();
+        
+        // Test Case 1
+        string test1 = "leeetcode";
+        string result1 = solution.MakeFancyString(test1);
+        Console.WriteLine($"Input: \"{test1}\" -> Output: \"{result1}\""); 
+        // Expected: "leetcode"
+        
+        // Test Case 2
+        string test2 = "aaabaaaa";
+        string result2 = solution.MakeFancyString(test2);
+        Console.WriteLine($"Input: \"{test2}\" -> Output: \"{result2}\""); 
+        // Expected: "aabaa"
+        
+        // Test Case 3
+        string test3 = "aab";
+        string result3 = solution.MakeFancyString(test3);
+        Console.WriteLine($"Input: \"{test3}\" -> Output: \"{result3}\""); 
+        // Expected: "aab"
+        
+        // Additional Test Case
+        string test4 = "aaabbbbccccddeeeee";
+        string result4 = solution.MakeFancyString(test4);
+        Console.WriteLine($"Input: \"{test4}\" -> Output: \"{result4}\""); 
+        // Expected: "aabbccddee"
+    }
+}
+```
+
+## Algorithm Walkthrough
+
+Let's trace through Example 1: `s = "leeetcode"`
+
+1. **i=0**: `'l'` - result = `"l"` (first character, always add)
+2. **i=1**: `'e'` - result = `"le"` (second character, always add)
+3. **i=2**: `'e'` - Check last two: `'l','e'` ≠ `'e','e'` → Add → result = `"lee"`
+4. **i=3**: `'e'` - Check last two: `'e','e'` = `'e','e'` → Skip (would create 3 consecutive)
+5. **i=4**: `'t'` - Check last two: `'e','e'` ≠ `'t','t'` → Add → result = `"leet"`
+6. Continue similarly...
+
+Final result: `"leetcode"`
 
 ## Complexity Analysis
 
 - **Time Complexity**: O(n) - Single pass through the string
-- **Space Complexity**: O(n) - For the result string
+- **Space Complexity**: O(n) - For the result string (StringBuilder/List)
 
 ## Key Insights
 
 - We only need to check the last two characters to determine if adding the current character would create three consecutive identical characters
 - This is a greedy problem where we can make the optimal choice at each step
 - No backtracking is needed since we're minimizing deletions
+- StringBuilder is more efficient than string concatenation for building the result
