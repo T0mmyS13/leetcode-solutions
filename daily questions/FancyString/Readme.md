@@ -75,31 +75,6 @@ public class Solution
 }
 ```
 
-### Alternative Approach (More Readable)
-
-```csharp
-public class Solution 
-{
-    public string MakeFancyString(string s) 
-    {
-        List<char> result = new List<char>();
-        
-        foreach (char c in s)
-        {
-            // If we have less than 2 characters or the current character
-            // is different from the last two, we can safely add it
-            if (result.Count < 2 || 
-                !(result[result.Count - 1] == c && result[result.Count - 2] == c))
-            {
-                result.Add(c);
-            }
-        }
-        
-        return new string(result.ToArray());
-    }
-}
-```
-
 ## Test Cases
 
 ```csharp
