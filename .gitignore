@@ -12,6 +12,7 @@ obj/
 *.booproj
 *.svd
 *.pch
+*.csproj
 
 # Visual Studio files
 .vs/
